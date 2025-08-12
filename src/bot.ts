@@ -1,5 +1,6 @@
 import {Bot} from "grammy";
 import {runCommands} from "./commands.ts";
+import 'dotenv/config';
 
 export const bot = new Bot(process.env.BOT_TOKEN || '');
 
