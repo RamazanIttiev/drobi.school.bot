@@ -5,3 +5,4 @@ export const RATES_FILE = `${REPLIES_URL}rates.html`
 export const RULES_FILE = `${REPLIES_URL}rules.html`
 export const FLOW_FILE = `${REPLIES_URL}flow.html`
 export const SITE_URL = 'https://drobi.school/'
+export const RULES_URL = `${REPLIES_URL}rules.html`
