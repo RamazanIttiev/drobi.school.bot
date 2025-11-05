@@ -1,5 +1,5 @@
 import {Api, type Bot, type CommandContext, Context, type RawApi} from "grammy";
-import {FLOW_FILE, GUIDE_FILE, RATES_FILE, RULES_URL, SITE_URL, WELCOME_FILE} from "./utils/constants.ts";
+import {FLOW_FILE, GUIDE_FILE, RATES_FILE, RULES_FILE, SITE_URL, WELCOME_FILE} from "./utils/constants.ts";
 import {readFile} from "./utils/fs.ts";
 import {replyWithContent} from "./utils/messages.ts";
 
@@ -48,6 +48,6 @@ export const runCommands = (bot: Bot<Context, Api<RawApi>>) => {
 
   bot.command("rules", async (ctx) => await replyWithContent({
     ctx,
-    filePath: RULES_URL,
+    filePath: RULES_FILE,
   }));
 }
